@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 namespace Asynchronism
 {
     public static class ThreadSample
-    {
-      
+    {     
 
         public static void Run()
         {
