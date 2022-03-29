@@ -6,7 +6,7 @@ namespace Asynchronism
     {
         static void Main(string[] args)
         {
-            TaskSample.Run();
+            TcsSample.Run();
         }
     }
 }

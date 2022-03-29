@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -9,8 +10,15 @@ namespace Asynchronism
 {
     public static class TaskSample
     {
-        public static Task<long> MakeSomeLongCalculation()
+        public static async IAsyncEnumerable<BigInteger> MakeSeriousCalculations()
         {
+            var r1 = await Task.Run(() => BigCalculation.Last100DigitsOfFibo().ElementAt(9_999_999));
+            yield return r1;
+            yield return Syracuse.Sequence((long)(r1 % long.MaxValue)).TakeWhile(val => val != 1).LongCount();
+        }
+
+        public static Task<long> MakeSomeLongCalculation()
+        {            
             return Task.Run(() => BigCalculation.Last100DigitsOfFibo().ElementAt(9_999_999))
                 .ContinueWith(t =>
                 {
@@ -32,17 +40,12 @@ namespace Asynchronism
             return Syracuse.Sequence((long)(result1 % long.MaxValue)).TakeWhile(val => val != 1).LongCount();
         }
 
-        public static void Run()
+        public static async Task Run()
         {
-            var task2 = MakeSomeLongCalculationWithAsync();
-
-            while (!task2.IsCompleted)
+            await foreach(var val in MakeSeriousCalculations())
             {
-                Console.WriteLine("waiting for end of calculation");
-                Thread.Sleep(100);
+                Console.WriteLine(val);
             }
-
-            Console.WriteLine($"I found {task2.Result}");
         }
     }
 }
