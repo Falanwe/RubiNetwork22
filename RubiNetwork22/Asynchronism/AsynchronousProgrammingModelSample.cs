@@ -20,7 +20,7 @@ namespace Asynchronism
             {                
                 var bytesRead = stream.EndRead(asyncResult);
                 shouldWait = false;
-                Console.WriteLine($"I read {bytesRead} bytes in the file");                
+                Console.WriteLine($"I read {bytesRead} bytes in the file");
             }, null);
 
             while(shouldWait)

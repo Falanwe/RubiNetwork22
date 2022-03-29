@@ -6,7 +6,7 @@ namespace Asynchronism
     {
         static void Main(string[] args)
         {
-            TcsSample.Run();
+            AtomicityIssue.Run().Wait();
         }
     }
 }
