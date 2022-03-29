@@ -32,10 +32,19 @@ namespace Asynchronism
             _programFinished = true;
         }
 
+        private static IEnumerator ShowSyracuse(long seed)
+        {
+            foreach(var val in Syracuse.Sequence(seed))
+            {
+                Console.WriteLine(val);
+                yield return null;
+            }
+        }
+
         public static void Run()
         {
             var coroutineEngine = new CoroutineEngine();
-            coroutineEngine.StartCoroutine(MyCoroutine());
+            coroutineEngine.StartCoroutine(ShowSyracuse(873));
 
             while(!_programFinished)
             {
