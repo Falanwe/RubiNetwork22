@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asynchronism", "Asynchronism\Asynchronism.csproj", "{BA380266-1517-4555-B919-D7B5EAB50472}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asynchronism", "Asynchronism\Asynchronism.csproj", "{BA380266-1517-4555-B919-D7B5EAB50472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkSampleClient", "NetworkSampleClient\NetworkSampleClient.csproj", "{E2327806-0936-47D2-80BC-2AF7A3AA64E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkSampleServer", "NetworkSampleServer\NetworkSampleServer.csproj", "{023E32B4-3D98-4F4C-BD30-5CC2FCD5E67A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkSampleShared", "NetworkSampleShared\NetworkSampleShared.csproj", "{0451F38B-3790-4537-8847-D5B03D2C3A37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{BA380266-1517-4555-B919-D7B5EAB50472}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA380266-1517-4555-B919-D7B5EAB50472}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA380266-1517-4555-B919-D7B5EAB50472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2327806-0936-47D2-80BC-2AF7A3AA64E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2327806-0936-47D2-80BC-2AF7A3AA64E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2327806-0936-47D2-80BC-2AF7A3AA64E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2327806-0936-47D2-80BC-2AF7A3AA64E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{023E32B4-3D98-4F4C-BD30-5CC2FCD5E67A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{023E32B4-3D98-4F4C-BD30-5CC2FCD5E67A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{023E32B4-3D98-4F4C-BD30-5CC2FCD5E67A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{023E32B4-3D98-4F4C-BD30-5CC2FCD5E67A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0451F38B-3790-4537-8847-D5B03D2C3A37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0451F38B-3790-4537-8847-D5B03D2C3A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0451F38B-3790-4537-8847-D5B03D2C3A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0451F38B-3790-4537-8847-D5B03D2C3A37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
