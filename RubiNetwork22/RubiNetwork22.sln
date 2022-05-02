@@ -5,15 +5,17 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asynchronism", "Asynchronism\Asynchronism.csproj", "{BA380266-1517-4555-B919-D7B5EAB50472}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkSampleClient", "NetworkSampleClient\NetworkSampleClient.csproj", "{E2327806-0936-47D2-80BC-2AF7A3AA64E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkSampleClient", "NetworkSampleClient\NetworkSampleClient.csproj", "{E2327806-0936-47D2-80BC-2AF7A3AA64E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkSampleServer", "NetworkSampleServer\NetworkSampleServer.csproj", "{023E32B4-3D98-4F4C-BD30-5CC2FCD5E67A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkSampleServer", "NetworkSampleServer\NetworkSampleServer.csproj", "{023E32B4-3D98-4F4C-BD30-5CC2FCD5E67A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkSampleShared", "NetworkSampleShared\NetworkSampleShared.csproj", "{0451F38B-3790-4537-8847-D5B03D2C3A37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkSampleShared", "NetworkSampleShared\NetworkSampleShared.csproj", "{0451F38B-3790-4537-8847-D5B03D2C3A37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HangedClient", "HangedClient\HangedClient.csproj", "{CFB16A90-072A-42B2-867A-C5E1D4E32C42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HangedClient", "HangedClient\HangedClient.csproj", "{CFB16A90-072A-42B2-867A-C5E1D4E32C42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HangedServer", "HangedServer\HangedServer.csproj", "{725E9768-CC7D-4B49-B3EA-90EB4E6D04FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HangedServer", "HangedServer\HangedServer.csproj", "{725E9768-CC7D-4B49-B3EA-90EB4E6D04FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleWebApi", "WordleWebApi\WordleWebApi.csproj", "{272FA65A-5841-4AE6-B9CD-83914A7A5BA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{725E9768-CC7D-4B49-B3EA-90EB4E6D04FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{725E9768-CC7D-4B49-B3EA-90EB4E6D04FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{725E9768-CC7D-4B49-B3EA-90EB4E6D04FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{272FA65A-5841-4AE6-B9CD-83914A7A5BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{272FA65A-5841-4AE6-B9CD-83914A7A5BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{272FA65A-5841-4AE6-B9CD-83914A7A5BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{272FA65A-5841-4AE6-B9CD-83914A7A5BA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
