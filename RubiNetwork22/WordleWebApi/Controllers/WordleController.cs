@@ -23,5 +23,20 @@ namespace WordleWebApi.Controllers
         {
             return _wordle.GetRandomWord();
         }
+
+        [HttpGet("RandomWord/{prefix}")]
+        public IActionResult RandomWord(string prefix)
+        {            
+            var result = _wordle.GetRandomWord(prefix);
+
+            if (result is not null)
+            {
+                return Json(result);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
     }
 }
